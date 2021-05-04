@@ -9,8 +9,11 @@ const persinalMovieDB = {
     privat: false,
 };
 
-let lastMovie = prompt('Один из последних просмотренных фильмов?');
-persinalMovieDB.movies[lastMovie];
-let filmScore = +prompt('На сколько его оцените?');
-persinalMovieDB.movies[lastMovie] = filmScore;
+const a = prompt('Один из последних просмотренных фильмов?'),
+    b = +prompt('На сколько его оцените?'),
+    c = prompt('Один из последних просмотренных фильмов?'),
+    d = +prompt('На сколько его оцените?');
+
+persinalMovieDB.movies[a] = b;
+persinalMovieDB.movies[c] = d;
 console.log(persinalMovieDB.movies);
